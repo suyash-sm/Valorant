@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team Game Prediction</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      }
+
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: rgba(232, 92, 67, 0.8);
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-weight: bold;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px;
+        border: 1px solid #0a0808;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      button[type="submit"] {
+        background-color: #3f51b5;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        font-size: 16px;
+        cursor: pointer;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      }
+
+      button[type="submit"]:hover {
+        background-color: #5c6bc0;
+      }
+
+  </style>
+  </head>
+  <body>
+    <!-- <h1>Team Game Prediction</h1>
+    <form method="POST" action="/my-url">
+      <label for="team1">Team 1:</label>
+      <input type="text" id="team1" name="team1"><br><br>
+      <label for="agent1">Agent 1:</label>
+      <input type="text" id="agent1" name="agent1"><br><br>
+      <label for="team2">Team 2:</label>
+      <input type="text" id="team2" name="team2"><br><br>
+      <label for="agent2">Agent 2:</label>
+      <input type="text" id="agent2" name="agent2"><br><br> -->
+      
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1>Team 1</h1>
+              <form action="/result" method="POST">
+                {% for i in range(5) %}
+                  <div class="form-group">
+                    <label for="team1_member{{ i+1 }}">Member {{ i+1 }}</label>
+                    <input type="text" class="form-control" id="team1_member{{ i+1 }}" name="team1_member{{ i+1 }}" required>
+                    <label for="team1_agent{{ i+1 }}">Agent</label>
+                    <select class="form-control" id="team1_agent{{ i+1 }}" name="team1_agent{{ i+1 }}" required>
+                      <option value="">Select agent</option>
+                      <option value="Brimstone">Brimstone</option>
+                      <option value="Phoenix">Phoenix</option>
+                      <option value="Sage">Sage</option>
+                      <option value="Sova">Sova</option>
+                      <option value="Viper">Viper</option>
+                      <option value="Cypher">Cypher</option>
+                      <option value="Reyna">Reyna</option>
+                      <option value="Killjoy">Killjoy</option>
+                      <option value="Breach">Breach</option>
+                      <option value="Omen">Omen</option>
+                      <option value="Jett">Jett</option>
+                      <option value="Raze">Raze</option>
+                      <option value="Skye">Skye</option>
+                      <option value="Yoru">Yoru</option>
+                      <option value="Astra">Astra</option>
+                    </select>
+                  </div>
+                {% endfor %}
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">Predict</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <h1>Team 2</h1>
+              <form action="/result" method="POST">
+                {% for i in range(5) %}
+                  <div class="form-group">
+                    <label for="team2_member{{ i+1 }}">Member {{ i+1 }}</label>
+                    <input type="text" class="form-control" id="team2_member{{ i+1 }}" name="team2_member{{ i+1 }}" required>
+                    <label for="team2_agent{{ i+1 }}">Agent</label>
+                    <select class="form-control" id="team2_agent{{ i+1 }}" name="team2_agent{{ i+1 }}" required>
+                      <option value="">Select agent</option>
+                      <option value="Brimstone">Brimstone</option>
+                      <option value="Phoenix">Phoenix</option>
+                      <option value="Sage">Sage</option>
+                      <option value="Sova">Sova</option>
+                      <option value="Viper">Viper</option>
+                      <option value="Cypher">Cypher</option>
+                      <option value="Reyna">Reyna</option>
+                      <option value="Killjoy">Killjoy</option>
+                      <option value="Breach">Breach</option>
+                      <option value="Omen">Omen</option>
+                      <option value="Jett">Jett</option>
+                      <option value="Raze">Raze</option>
+                      <option value="Skye">Skye</option>
+                      <option value="Yoru">Yoru</option>
+                      <option value="Astra">Astra</option>
+                    </select>
+                  </div>
+                {% endfor %}
+
+            </div>
+          </div>
+        </div>
+      
+      <button type="submit">Predict Winner</button>
+    </form>
+  </body>
+</html>

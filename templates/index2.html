@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Valorant Team Picker</title>
+	<style>
+		body {
+			background-color: black;
+		}
+
+		h1 {
+			color: white;
+			text-align: center;
+		}
+
+		form {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.team {
+			background-color: #0e1726;
+			border-radius: 10px;
+			color: white;
+			margin: 20px;
+			padding: 20px;
+			width: 40%;
+		}
+        .map {
+			background-color: #778cf5;
+			border-radius: 20px;
+			color: white;
+			margin: 10px;
+			padding: 10px;
+			width: 15%;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type=text] {
+			border-radius: 5px;
+			border: none;
+			padding: 10px;
+			width: 100%;
+		}
+
+		input[type=submit] {
+			background-color: #f1356d;
+			border-radius: 5px;
+			border: none;
+			color: white;
+			cursor: pointer;
+			margin-top: 10px;
+			padding: 10px;
+			width: 30%;
+		}
+	</style>
+</head>
+<body>
+	<h1>Valorant Match Predictor</h1>
+	<form method="POST" action="/my-url">
+        
+		<div class="team">
+			<h2>Team 1</h2>
+			<label for="m11">Member 1:</label>
+			<input type="text" name="m11">
+
+			<label for="a11">Agent:</label>
+			<select class="form-control" id="a11" name="a11" required>
+                <option value="">Select agent</option>
+                <option value="Brimstone">Brimstone</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Sage">Sage</option>
+                <option value="Sova">Sova</option>
+                <option value="Viper">Viper</option>
+                <option value="Cypher">Cypher</option>
+                <option value="Reyna">Reyna</option>
+                <option value="Killjoy">Killjoy</option>
+                <option value="Breach">Breach</option>
+                <option value="Omen">Omen</option>
+                <option value="jett">jett</option>
+                <option value="Raze">Raze</option>
+                <option value="Skye">Skye</option>
+                <option value="Yoru">Yoru</option>
+                <option value="Astra">Astra</option>
+              </select>
+            <label for="m21">Member 2:</label>
+			<input type="text" name="m21">
+			<label for="a21">Agent:</label>
+			<select class="form-control" id="a21" name="a21" required>
+                <option value="">Select agent</option>
+                <option value="Brimstone">Brimstone</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Sage">Sage</option>
+                <option value="Sova">Sova</option>
+                <option value="Viper">Viper</option>
+                <option value="Cypher">Cypher</option>
+                <option value="Reyna">Reyna</option>
+                <option value="Killjoy">Killjoy</option>
+                <option value="Breach">Breach</option>
+                <option value="Omen">Omen</option>
+                <option value="jett">jett</option>
+                <option value="Raze">Raze</option>
+                <option value="Skye">Skye</option>
+                <option value="Yoru">Yoru</option>
+                <option value="Astra">Astra</option>
+              </select>
+            <label for="m31">Member 3:</label>
+			<input type="text" name="m31">
+			<label for="a31">Agent:</label>
+			<select class="form-control" id="a31" name="a31" required>
+                <option value="">Select agent</option>
+                <option value="Brimstone">Brimstone</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Sage">Sage</option>
+                <option value="Sova">Sova</option>
+                <option value="Viper">Viper</option>
+                <option value="Cypher">Cypher</option>
+                <option value="Reyna">Reyna</option>
+                <option value="Killjoy">Killjoy</option>
+                <option value="Breach">Breach</option>
+                <option value="Omen">Omen</option>
+                <option value="jett">jett</option>
+                <option value="Raze">Raze</option>
+                <option value="Skye">Skye</option>
+                <option value="Yoru">Yoru</option>
+                <option value="Astra">Astra</option>
+              </select>
+            <label for="m41">Member 4:</label>
+			<input type="text" name="m41">
+			<label for="a41">Agent:</label>
+			<select class="form-control" id="a41" name="a41" required>
+                <option value="">Select agent</option>
+                <option value="Brimstone">Brimstone</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Sage">Sage</option>
+                <option value="Sova">Sova</option>
+                <option value="Viper">Viper</option>
+                <option value="Cypher">Cypher</option>
+                <option value="Reyna">Reyna</option>
+                <option value="Killjoy">Killjoy</option>
+                <option value="Breach">Breach</option>
+                <option value="Omen">Omen</option>
+                <option value="jett">jett</option>
+                <option value="Raze">Raze</option>
+                <option value="Skye">Skye</option>
+                <option value="Yoru">Yoru</option>
+                <option value="Astra">Astra</option>
+              </select>
+            <label for="m51">Member 5:</label>
+			<input type="text" name="m51">
+			<label for="a51">Agent:</label>
+			<select class="form-control" id="a51" name="a51" required>
+                <option value="">Select agent</option>
+                <option value="Brimstone">Brimstone</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Sage">Sage</option>
+                <option value="Sova">Sova</option>
+                <option value="Viper">Viper</option>
+                <option value="Cypher">Cypher</option>
+                <option value="Reyna">Reyna</option>
+                <option value="Killjoy">Killjoy</option>
+                <option value="Breach">Breach</option>
+                <option value="Omen">Omen</option>
+                <option value="jett">jett</option>
+                <option value="Raze">Raze</option>
+                <option value="Skye">Skye</option>
+                <option value="Yoru">Yoru</option>
+                <option value="Astra">Astra</option>
+              </select>
+
+		</div>
+        <div class="map">
+            <h2>Map</h2>
+            <label for="map">Map</label>
+            <input type="text" name="map">
+        </div>
+		<div class="team">
+			<h2>Team 2</h2>
+			<label for="m12">Member 1:</label>
+			<input type="text" name="m12">
+
+			<label for="a12">Agent:</label>
+			<select class="form-control" id="a12" name="a12" required>
+                <option value="">Select agent</option>
+                <option value="Brimstone">Brimstone</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Sage">Sage</option>
+                <option value="Sova">Sova</option>
+                <option value="Viper">Viper</option>
+                <option value="Cypher">Cypher</option>
+                <option value="Reyna">Reyna</option>
+                <option value="Killjoy">Killjoy</option>
+                <option value="Breach">Breach</option>
+                <option value="Omen">Omen</option>
+                <option value="jett">jett</option>
+                <option value="Raze">Raze</option>
+                <option value="Skye">Skye</option>
+                <option value="Yoru">Yoru</option>
+                <option value="Astra">Astra</option>
+              </select>
+            <label for="m22">Member 2:</label>
+			<input type="text" name="m22">
+			<label for="a22">Agent:</label>
+			<select class="form-control" id="a22" name="a22" required>
+                <option value="">Select agent</option>
+                <option value="Brimstone">Brimstone</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Sage">Sage</option>
+                <option value="Sova">Sova</option>
+                <option value="Viper">Viper</option>
+                <option value="Cypher">Cypher</option>
+                <option value="Reyna">Reyna</option>
+                <option value="Killjoy">Killjoy</option>
+                <option value="Breach">Breach</option>
+                <option value="Omen">Omen</option>
+                <option value="jett">jett</option>
+                <option value="Raze">Raze</option>
+                <option value="Skye">Skye</option>
+                <option value="Yoru">Yoru</option>
+                <option value="Astra">Astra</option>
+              </select>
+            <label for="m32">Member 3:</label>
+			<input type="text" name="m32">
+			<label for="a32">Agent:</label>
+			<select class="form-control" id="a32" name="a32" required>
+                <option value="">Select agent</option>
+                <option value="Brimstone">Brimstone</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Sage">Sage</option>
+                <option value="Sova">Sova</option>
+                <option value="Viper">Viper</option>
+                <option value="Cypher">Cypher</option>
+                <option value="Reyna">Reyna</option>
+                <option value="Killjoy">Killjoy</option>
+                <option value="Breach">Breach</option>
+                <option value="Omen">Omen</option>
+                <option value="jett">jett</option>
+                <option value="Raze">Raze</option>
+                <option value="Skye">Skye</option>
+                <option value="Yoru">Yoru</option>
+                <option value="Astra">Astra</option>
+              </select>
+            <label for="m42">Member 4:</label>
+			<input type="text" name="m42">
+			<label for="a42">Agent:</label>
+			<select class="form-control" id="a42" name="a42" required>
+                <option value="">Select agent</option>
+                <option value="Brimstone">Brimstone</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Sage">Sage</option>
+                <option value="Sova">Sova</option>
+                <option value="Viper">Viper</option>
+                <option value="Cypher">Cypher</option>
+                <option value="Reyna">Reyna</option>
+                <option value="Killjoy">Killjoy</option>
+                <option value="Breach">Breach</option>
+                <option value="Omen">Omen</option>
+                <option value="jett">jett</option>
+                <option value="Raze">Raze</option>
+                <option value="Skye">Skye</option>
+                <option value="Yoru">Yoru</option>
+                <option value="Astra">Astra</option>
+              </select>
+            <label for="m52">Member 5:</label>
+			<input type="text" name="m52">
+			<label for="a52">Agent:</label>
+			<select class="form-control" id="a52" name="a52" required>
+                <option value="">Select agent</option>
+                <option value="Brimstone">Brimstone</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Sage">Sage</option>
+                <option value="Sova">Sova</option>
+                <option value="Viper">Viper</option>
+                <option value="Cypher">Cypher</option>
+                <option value="Reyna">Reyna</option>
+                <option value="Killjoy">Killjoy</option>
+                <option value="Breach">Breach</option>
+                <option value="Omen">Omen</option>
+                <option value="jett">jett</option>
+                <option value="Raze">Raze</option>
+                <option value="Skye">Skye</option>
+                <option value="Yoru">Yoru</option>
+                <option value="Astra">Astra</option>
+              </select>
+		</div>
+		<input type="submit" value="Pick Winner">
+	</form>
+</body>
+</html>
