@@ -8,3 +8,6 @@ Steps to run it-
 3. You will get something like this -  Running on http://127.0.0.1:5000
 4. Copy that source and run it on ut browser and start predicting matches :)
 5. Make sure you write the correct name of the player or it wont work.
+
+
+PS- I will add more detials later.
