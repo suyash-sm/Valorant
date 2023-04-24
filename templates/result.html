@@ -1,14 +1,4 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-	<title>Result</title>
-</head>
-<body>
-	<h1>Result</h1>
-	<p>The predicted winner is {{ winner }}!</p>
-</body>
-</html>
- -->
+<!-- 
  <!DOCTYPE html>
 <html>
 <head>
@@ -20,4 +10,61 @@
 	<button onclick="window.location.href='/'">Predict Again</button>
 </body>
 </html>
+ -->
 
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		
+		h1 {
+			color: #444;
+			text-align: center;
+			margin-top: 50px;
+		}
+		
+		.result {
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			margin: 50px auto;
+			max-width: 500px;
+			padding: 30px;
+			text-align: center;
+		}
+		
+		p {
+			color: #555;
+			font-size: 24px;
+			margin: 20px 0;
+		}
+		
+		button {
+			background-color: #008CBA;
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 20px;
+			padding: 10px 20px;
+			transition: background-color 0.3s ease;
+		}
+		
+		button:hover {
+			background-color: #005f6b;
+		}
+	</style>
+</head>
+<body>
+	<h1>Result</h1>
+	<div class="result">
+		<p>The prediction is <strong>{{ winner }}</strong>!</p>
+		<button onclick="window.location.href='/'">Predict Again</button>
+	</div>
+</body>
+</html>
