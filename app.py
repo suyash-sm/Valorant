@@ -124,7 +124,7 @@ def result():
         winner='Team1'
 
     else :
-        winner='Team1'
+        winner='Team2'
     return render_template('result.html', winner=winner)
 
 if __name__ == '__main__':
