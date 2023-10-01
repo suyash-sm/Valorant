@@ -10,4 +10,4 @@ Steps to run it-
 5. Make sure you write the correct name of the player or it wont work.
 
 
-PS- I will add more detials later.
+PS- I will add more details later.
